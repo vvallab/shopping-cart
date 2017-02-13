@@ -1,0 +1,14 @@
+import org.junit.Test
+import junit.framework.TestCase
+import org.junit.Assert._
+class Shopping_Test extends TestCase{
+
+val fruit_cost = new Fruit_Cost();
+def simpleTest() {
+    val str1 = "appple,orange,apple"
+    val fruit_list = str1.split(",").map(_.trim).map(_.toLowerCase);
+    val expected = 1.45
+    val result = fruit_cost.calc_total(fruit_list,0.6,0.25)
+    assertThat(result, is(expected))
+  }
+}
