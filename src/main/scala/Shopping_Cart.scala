@@ -16,6 +16,12 @@ val tot_cost = f_cost.calc_total(fruit_list,a_price,o_price);
 
 println("total cost: "+tot_cost);
 
+val disc_cost = f_cost.calc_discount(fruit_list,a_price,o_price);
+
+val net_cost = tot_cost-disc_cost;
+
+println("net cost: "+ net_cost);
+
 }
 
 
